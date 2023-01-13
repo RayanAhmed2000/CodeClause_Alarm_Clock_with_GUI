@@ -1,2 +1,5 @@
 # CodeClause_Alarm_Clock_with_GUI
-mj
+- a gui based alarm clock
+- designed in python
+- made with Tkinter
+
