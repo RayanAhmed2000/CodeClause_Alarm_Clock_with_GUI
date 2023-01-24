@@ -1,9 +1,10 @@
-from tkinter import *					#
+from tkinter import *					# Python library used to create GUI interfaces
 from tkinter import messagebox
 import time, sys
 from pygame import mixer
 from PIL import Image, ImageTk
 
+# Alarm Function
 def alarm():
 
 	alarm_time=user_input.get()
@@ -22,6 +23,7 @@ def alarm():
 
 				playmusic()
 
+# Alarm ringtone play when its Time for alarm to ring
 def playmusic():
 	mixer.init()
 	mixer.music.load('alarm.mp3')
@@ -34,6 +36,8 @@ def playmusic():
 
 root=Tk()
 
+
+# Creating the GUI wimndow
 root.title("Alarm Clock")
 root.geometry("600x380")
 canvas=Canvas(root,width=600,height=380)
